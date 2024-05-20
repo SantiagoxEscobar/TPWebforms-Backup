@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="site.Master.cs" Inherits="TPWebForm_equipo_5.MiMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%:Page.Title %> CarritoWeb</title>
+    <link href="img\IconoWeb.png" rel="icon" type="image/png"/>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/EstilosBackgroundColor.css" rel="stylesheet"/>
+    <link href="css/StyleWebPage.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <form id="form1" runat="server">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #274C77">
+                <div class="container-fluid">
+                    <a class="nav-link active  d-inline-flex p-2" aria-current="page" href="default.aspx">
+                        <h3 style="color: white; width: 20%;">CarritoWeb</h3>
+                    </a>
+                    <div class="d-inline-flex p-2 w-50 justify-content-center" id="navbarSupportedContent">
+                        <asp:TextBox ID="txtBusqueda" runat="server" CssClass="form-control me-2"></asp:TextBox>
+
+                        <asp:Button ID="btnBusqueda" runat="server" Text="Buscar" CssClass="btn btn-outline-light" OnClick="btnBusqueda_Click" />
+                    </div>
+                    <div>
+                        <ul class="navbar-nav me-auto ml-3 mb-2 mb-lg-0" style="color: white; width: 20%;">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="default.aspx">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="VentanaCarrito.aspx">
+                                    <img style="width: 24px; height: 24px" src="https://cdn-icons-png.flaticon.com/512/998/998653.png" alt="carrito">
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <asp:Label ID="Contador" runat="server" Text="0"></asp:Label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+
+        <footer id="about" style="background-color: #274C77; position: relative; bottom: 0;">
+            <div class="container-fluid text-center">
+                <div class="row p-5 text-white">
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <p class="h6">Medios de pago</p>
+                        <div>
+                            <img class="img-thumbnail" src="img\formas-pago.png" alt="Medios de pago" />
+                        </div>
+                    </div>
+                    <div class="col-s-12 col-md-6 col-lg-3">
+                        <p class="h6">Integrantes del proyecto Web</p>
+                        <br />
+                        <ul class="list-unstyled">
+                            <li>Santiago Javier Escobar Mendoza</li>
+                            <li>Mariano Stoessel</li>
+                            <li>Alejo Chavez Tolosa</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <p class="h6">Nuestras Redes</p>
+                        <br />
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <img style="width: 32px; height: 32px" src="img\icons8-facebook-50.png" alt="Facebook" /></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <img style="width: 32px; height: 32px" src="img\icons8-instagram-50.png" alt="Instagram" /></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <img style="width: 32px; height: 32px" src="img/icons8-twitter-50.png"" alt="Twitter" /></a>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <img style="width: 32px; height: 32px" src="img\icons8-tik-tok-50.png" alt="TikTok" /></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <img style="width: 32px; height: 32px" src="img\icons8-youtube-50.png" alt="Youtube" /></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <img style="width: 32px; height: 32px" src="img\icons8-linkedin-50.png" alt="Linkedin" /></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                        <p class="h6">Programación III - Equipo docente:</p>
+                        <br />
+                           <ul class="list-unstyled">
+                                <li>Maximiliano Sar Fernández</li>
+                                <li>Regina Laurentino</li>
+                                <li>Gonzalo Ligero</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+
+        </footer>
+    </form>
+</body>
+</html>

@@ -1,0 +1,117 @@
+﻿#containerPrincipal {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.card {
+    align-items: center;
+    height: auto;
+    width: 90%;
+}
+
+.card-body {
+    text-align: center;
+    align-items: center;
+}
+
+.card-footer {
+    text-align: center;
+    align-items: center;
+}
+
+    .card-footer .btn {
+        margin: 10px;
+    }
+
+#containerDetalle {
+    display: flex;
+    height: auto;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #f1f1f1;
+}
+
+.carousel-item {
+    width: 400px, 600px;
+}
+
+.row {
+    height: auto;
+    width: 100%;
+}
+
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#containerFormulario {
+    background-color: #274C77;
+    color: white;
+    padding-top: 10px;
+}
+
+#containerPoliticas {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#containerCarrito {
+    display: flex;
+    height: auto;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #f1f1f1;
+}
+
+#containerResumenCompra {
+    color: white;
+    height: auto;
+    width: 300px;
+    padding: 20px;
+    background-color: #274C77;
+    text-align: center;
+}
+
+    #containerResumenCompra div.row {
+        text-align: center;
+        margin-left: 1px;
+        padding-bottom: 10px;
+    }
+
+    #containerResumenCompra div {
+        padding-top: 10px;
+    }
+
+#containerCarritoVacio {
+    display: flex;
+    height: auto;
+    width: 60%;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #f1f1f1;
+}
+
+.modal-content div {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.modal-header {
+    background-color: #274C77;
+    color: white;
+}

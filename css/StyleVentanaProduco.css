@@ -1,0 +1,23 @@
+.flex-container {
+    border: 1px solid black;
+    display: flex;
+    margin: auto auto;
+    justify-content: space-evenly;
+}
+.card {
+    background-color: #6096BA;
+    height: 450px;
+    width: 250px;
+    
+}
+.card-img-top {
+    background-color: #A3CEF1;
+    height: 250px;
+    width: 250px
+}
+.form-select {
+    width: 20%;
+    text-align:right;
+
+    
+}
